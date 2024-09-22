@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Gallery</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="navbar-toggle" id="mobileMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <!-- Image Items -->
+            <div class="image-item">
+                <img src="img3.jpg" alt="Sample Image 1" onclick="openLightbox(this)">
+            </div>
+            <div class="image-item">
+                <img src="img5.jpg" alt="Sample Image 2" onclick="openLightbox(this)">
+            </div>
+            <div class="image-item">
+                <img src="img9.jpg" alt="Sample Image 3" onclick="openLightbox(this)">
+            </div>
+            <div class="image-item">
+                <img src="img12.jpg" alt="Sample Image 4" onclick="openLightbox(this)">
+            </div>
+            <div class="image-item">
+                <img src="img11.jpg" alt="Sample Image 5" onclick="openLightbox(this)">
+            </div>
+            <div class="image-item">
+                <img src="img13.jpg" alt="Sample Image 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Viewing Images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
